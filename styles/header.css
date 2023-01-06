@@ -1,0 +1,164 @@
+.header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  height: 57px;
+  margin: 0 0 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.youtube-logo {
+  height: 20px;
+  cursor: pointer;
+}
+
+.middle-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 470px;
+  margin-left: 60px;
+}
+
+.search-bar {
+  height: 36px;
+  flex: 1;
+  padding-left: 12px;
+  width: 0;
+  min-width: 0;
+  font-size: 16px;
+  border: 1px solid rgb(204, 204, 204);
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  box-shadow:inset 0px 1px 2px rgb(238, 238, 238);
+}
+
+.search-bar::placeholder {
+  font-size: 16px;
+  color: rgb(149, 149, 149);
+}
+
+.search-button {
+  height: 40px;
+  width: 64px;
+  border: solid 1px rgb(204, 204, 204);
+  border-left: 0;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  background-color: rgb(247, 247, 247);
+  margin-right: 8px;
+}
+
+.search-button, 
+.voice-search-button,
+.menu-icon-container,
+.notification-icon-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.menu-icon-container .tooltip,
+.notification-icon-container .tooltip {
+  font-size: 12px;
+  background-color: rgba(96,96,96,0.9);
+  color: white;
+  padding: 8px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -40px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.menu-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon {
+  height: 24px;
+}
+
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+}
+
+.voice-search-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 24px;
+  margin-left: 29px;
+  flex-shrink: 0;
+  width: 182px;
+}
+
+.icon {
+  height: 24px;
+  cursor: pointer;
+}
+
+.notification-icon-container {
+  position: relative;
+  display: flex;
+}
+
+.notification-count {
+  background-color: rgb(204, 0, 0);
+  position: absolute;
+  border-radius: 80px;
+  top: -3px;
+  right: -7px;
+  color: white;
+  border: solid 2px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  padding: 0 5px;
+  pointer-events: none;
+}
+
+.my-channel {
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+}
